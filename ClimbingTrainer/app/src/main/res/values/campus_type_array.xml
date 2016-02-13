@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="campus_type_array">
+        <item>Laddering</item>
+        <item>Touches</item>
+        <item>Doubles</item>
+        <item>Bumps</item>
+    </string-array>
+</resources>

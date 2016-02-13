@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp"
+    android:background="#fff"
+    android:id="@+id/ViewGroup_Bottomsheet">
+
+    <TextView
+        android:id="@+id/bottomsheet_TextView_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:text="@string/indoorClimbingTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        />
+    <NumberPicker
+        android:id="@+id/bottomsheet_NumberPicker_Grades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_below="@id/bottomsheet_TextView_Title"
+        android:layout_marginStart="16dp">
+    </NumberPicker>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/projecting"
+        android:id="@+id/checkBox"
+        android:layout_below="@+id/bottomsheet_TextView_Title"
+        android:layout_alignEnd="@+id/bottomsheet_appCompatButton_StoreClimb" />
+
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/bottomsheet_appCompatButton_StoreClimb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/md_cyan_500"
+        android:drawableStart="@drawable/ic_add_white_24dp"
+        android:text="@string/add"
+        android:inputType="textCapWords"
+        android:layout_alignBottom="@id/bottomsheet_NumberPicker_Grades"
+        android:layout_marginEnd="16dp"
+        />
+
+
+</RelativeLayout>

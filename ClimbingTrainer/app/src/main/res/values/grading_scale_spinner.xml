@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="grading_scales_spinner">
+        <item>fontainebleau</item>
+        <item>hueco</item>
+    </string-array>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="total number of sends"
+        android:id="@+id/overview_textView_sendTitle"
+        android:layout_marginTop="56dp"
+        android:layout_marginStart="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="all hangTime max grade"
+        android:id="@+id/overview_textView_maxGradeTitle"
+        android:layout_below="@+id/overview_textView_sendTitle"
+        android:layout_alignStart="@+id/overview_textView_sendTitle"
+        android:layout_marginTop="44dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="all hangTime hanboarding hangTime"
+        android:id="@+id/overview_textView_hangboardTitle"
+        android:layout_below="@+id/overview_textView_maxGradeTitle"
+        android:layout_alignStart="@+id/overview_textView_maxGradeTitle"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="total number of steps"
+        android:id="@+id/overview_textView_stepsTitle"
+        android:layout_below="@+id/overview_textView_hangboardTitle"
+        android:layout_alignStart="@+id/overview_textView_hangboardTitle"
+        android:layout_marginTop="62dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="total distance campused"
+        android:id="@+id/overview_textView_distanceTitle"
+        android:layout_below="@+id/overview_textView_stepsTitle"
+        android:layout_alignStart="@+id/overview_textView_stepsTitle"
+        android:layout_marginTop="37dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/overview_textView_sendValue"
+        android:layout_below="@+id/overview_textView_sendTitle"
+        android:layout_alignStart="@+id/overview_textView_sendTitle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/overview_textView_maxGradeValue"
+        android:layout_below="@+id/overview_textView_maxGradeTitle"
+        android:layout_alignStart="@+id/overview_textView_maxGradeTitle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/overview_textView_hangboardValue"
+        android:layout_below="@+id/overview_textView_hangboardTitle"
+        android:layout_alignStart="@+id/overview_textView_hangboardTitle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/overview_textView_stepsValue"
+        android:layout_below="@+id/overview_textView_stepsTitle"
+        android:layout_alignStart="@+id/overview_textView_stepsTitle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/overview_textView_distanceValue"
+        android:layout_below="@+id/overview_textView_distanceTitle"
+        android:layout_alignStart="@+id/overview_textView_distanceTitle" />
+</RelativeLayout>

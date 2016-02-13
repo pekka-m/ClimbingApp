@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/practiceDetailsFragment_TextView_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Date"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/practiceDetailsFragment_TextView_climbing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="bouldering"
+        android:layout_below="@+id/practiceDetailsFragment_TextView_date"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/practiceDetailsFragment_textView_sends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Number of sends"
+        android:layout_below="@+id/practiceDetailsFragment_TextView_climbing"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/practiceDetailsFragment_textView_sends_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:layout_marginStart="41dp"
+        android:layout_alignTop="@+id/practiceDetailsFragment_textView_sends"
+        android:layout_toEndOf="@+id/practiceDetailsFragment_textView_sends" />
+
+    <TextView
+        android:id="@+id/practiceDetailsFragment_textView_maxGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="max grade"
+        android:layout_below="@+id/practiceDetailsFragment_textView_sends"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/practiceDetailsFragment_textView_maxGrade_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:layout_alignTop="@+id/practiceDetailsFragment_textView_maxGrade"
+        android:layout_alignStart="@+id/practiceDetailsFragment_textView_sends_value" />
+
+    <TextView
+        android:id="@+id/practiceDetailsFragment_textView_projectingGrades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="projecting grade(s)"
+        android:layout_below="@+id/practiceDetailsFragment_textView_maxGrade"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/practiceDetailsFragment_textView_projectingGrades_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:layout_below="@+id/practiceDetailsFragment_textView_maxGrade_value"
+        android:layout_alignStart="@+id/practiceDetailsFragment_textView_maxGrade_value" />
+
+    <TextView
+        android:id="@+id/practiceDetailsFragment_textView_hangboarding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="hangboarding"
+        android:layout_below="@+id/practiceDetailsFragment_textView_projectingGrades"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/practiceDetailsFragment_textView_totalHangTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="total hangtime"
+        android:layout_below="@+id/practiceDetailsFragment_textView_hangboarding"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/practiceDetailsFragment_textView_totalHangTime_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:layout_alignBottom="@+id/practiceDetailsFragment_textView_totalHangTime"
+        android:layout_alignStart="@+id/practiceDetailsFragment_textView_projectingGrades_value" />
+
+    <TextView
+        android:id="@+id/practiceDetailsFragment_textView_campusing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="campusing"
+        android:layout_below="@+id/practiceDetailsFragment_textView_totalHangTime"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/practiceDetailsFragment_textView_campusSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="number of steps"
+        android:layout_below="@+id/practiceDetailsFragment_textView_campusing"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/practiceDetailsFragment_textView_campusSteps_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:layout_alignTop="@+id/practiceDetailsFragment_textView_campusSteps"
+        android:layout_alignStart="@+id/practiceDetailsFragment_textView_totalHangTime_value" />
+
+    <TextView
+        android:id="@+id/practiceDetailsFragment_textView_campusDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="distance campused"
+        android:layout_below="@+id/practiceDetailsFragment_textView_campusSteps"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/practiceDetailsFragment_textView_campusDistance_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:layout_below="@+id/practiceDetailsFragment_textView_campusDistance"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

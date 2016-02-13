@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/campusActivity_rootView">
+
+    <TextView
+        android:id="@+id/campusActivity_textView_campusResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/campusActivity_editText_campusSteps"
+        android:layout_width="wrap_content"
+        android:minWidth="25dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:imeOptions="actionDone"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp" />
+
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/campusActivity_spinner_campusType"
+        android:layout_below="@+id/campusActivity_editText_campusSteps"
+        android:layout_alignEnd="@+id/campusActivity_button_addCampus"
+        android:layout_marginTop="45dp"
+        android:entries="@array/campus_type_array"/>
+
+    <Button
+        android:id="@+id/campusActivity_button_addCampus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_campus"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="30sp"
+        android:layout_below="@+id/campusActivity_editText_campusSteps"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="148dp" />
+</RelativeLayout>

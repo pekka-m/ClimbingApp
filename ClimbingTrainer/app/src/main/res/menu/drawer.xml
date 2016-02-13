@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/menu_top">
+        <item
+            android:id="@+id/menu_hangboardSessionEditor"
+            android:title="Hangboard session editor" />
+        <item
+            android:id="@+id/menu_history"
+            android:title="Overview"/>
+        <item
+            android:id="@+id/menu_details"
+            android:title="History"/>
+    </group>
+    <group
+        android:id="@+id/menu_bottom">
+        <item
+            android:id="@+id/menu_settings"
+            android:title="Settings"/>
+        <item
+            android:id="@+id/menu_about"
+            android:title="About"/>
+    </group>
+    <group
+        android:id="@+id/menu_debug">
+        <item
+            android:id="@+id/menu_debug_detail"
+            android:title="debug_detail"/>
+    </group>
+</menu>

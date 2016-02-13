@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/md_grey_500">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/settings_climb"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="2dp"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingBottom="16dp">
+
+                    <TextView
+                        android:id="@+id/settings_textView_climb_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Climbing"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="40dp"
+                        android:layout_alignParentTop="true"/>
+
+                    <TextView
+                        android:id="@+id/settings_TextView_gradingScale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/settings_textView_climb_title"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="40dp"
+                        android:textSize="15sp"
+                        android:text="Grading scale"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/settings_Spinner_gradingScale"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/settings_TextView_gradingScale"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="16dp"
+                        android:layout_marginRight="16dp"
+                        android:entries="@array/grading_scales_spinner"/>
+
+                    <TextView
+                        android:id="@+id/settings_TextView_campusSpacing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/settings_Spinner_gradingScale"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="40dp"
+                        android:text="Campus spacing"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/settings_Spinner_campusSpacing"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/settings_TextView_campusSpacing"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="16dp"
+                        android:layout_marginRight="16dp"
+                        android:entries="@array/campus_spacing_spinner"/>
+
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/scrollView"
+                        android:layout_alignBottom="@+id/settings_textView_climb_title"
+                        android:layout_toEndOf="@+id/settings_TextView_campusSpacing"
+                        android:fillViewport="false" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/settings_units"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingBottom="16dp">
+
+                    <TextView
+                        android:id="@+id/settings_textView_units_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Units"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="40dp"
+                        android:layout_alignParentTop="true"/>
+
+                    <TextView
+                        android:id="@+id/settings_textView_units"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/settings_textView_units_title"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="40dp"
+                        android:textSize="15sp"
+                        android:text="Units"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/settings_Spinner_units"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/settings_textView_units"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="16dp"
+                        android:layout_marginRight="16dp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/settings_fit"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingBottom="16dp">
+
+                    <TextView
+                        android:id="@+id/settings_textView_fit_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Google Fit"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="40dp"
+                        android:layout_alignParentTop="true"/>
+
+                    <Switch
+                        android:id="@+id/settings_switch_sync"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sync"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="16dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_below="@+id/settings_textView_fit_title"
+                        android:layout_alignParentStart="true" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
